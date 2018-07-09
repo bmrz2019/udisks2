@@ -1,0 +1,6 @@
+# cherry-picked from upstream
+
+# Debian patches for udisks
+
+# Ubuntu patches for udisks
+reread_parttable.patch
