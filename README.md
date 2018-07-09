@@ -24,3 +24,14 @@ service udisks2 restart
 systemctl daemon-reload
 ```
 
+# Before
+
+```sh
+/dev/sde1 on /media/NAME/USBDRIVE type vfat (rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,flush,errors=remount-ro,uhelper=udisks2)
+```
+
+# After
+
+```sh
+/dev/sde1 on /media/NAME/USBDRIVE type vfat (rw,nosuid,nodev,relatime,uid=1000,gid=1000,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,showexec,utf8,errors=remount-ro,uhelper=udisks2)
+```
